@@ -1,0 +1,59 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.navbar .logo h1 {
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar ul li:hover {
+  color: #00aced;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #3a7bd5, #3a6073);
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hero h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+/* Make sure everything is visible */
+section {
+  min-height: 60vh;
+}

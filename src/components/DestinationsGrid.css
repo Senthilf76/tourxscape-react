@@ -1,0 +1,54 @@
+.destination-grid-section {
+  padding: 40px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);   /* 4 columns */
+  grid-auto-rows: 150px;                   /* base height */
+  gap: 20px;
+}
+
+/* Card Styling */
+.destination-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease-in-out;
+}
+
+.destination-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+  color: white;
+}
+
+.destination-overlay h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.destination-overlay p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}

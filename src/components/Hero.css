@@ -1,0 +1,152 @@
+section.hero {
+  position: relative;
+  height: 80vh;
+  width: 110%;
+  background: url("/public/assets/bgg.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1410px;
+  background-color: #dd7310;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content */
+.hero-content {
+  position: absolute;
+  text-align: left;
+  color: #296574;
+  padding-right: 600px;
+  max-width: 1400px;
+  font-family: "Garamond", cursive;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.primary-btn {
+  background-color: #dd7310;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #ff9d37;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+  section.hero {
+    height: 70vh;
+    border-radius: 0;
+  }
+
+  .hero-content {
+    padding-right: 200px;
+    max-width: 1000px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* =========================
+   MOBILE (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+  section.hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 60px 20px;
+    border-radius: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    padding-right: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}

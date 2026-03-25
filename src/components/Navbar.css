@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR BASE */
+.glass-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* CONTAINER */
+.nav-container {
+  max-width:80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #f8fdf8;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  height: 50px;
+  margin-left: -70px;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links li:hover,
+.nav-links li.active {
+  color: #208a20;
+}
+
+/* BOOK TICKET LINK */
+.book  {
+  color: #030303;            /* default color */
+  text-decoration: none;      /* remove underline */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.book:hover {
+  color: #0d4e04;            /* hover color */
+}
+
+.book.active {
+  color: #208a20;            /* active page color matches scroll links */
+}
+
+/* HAMBURGER ICON */
+.nav-toggle {
+  display: none;
+  font-size: 26px;
+  color: #0d4e04;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE FIX */
+/* ============================= */
+@media (max-width: 900px) {
+  /* Show hamburger */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hide menu completely by default */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(211, 208, 208, 0.35);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    display: none; /* hidden by default */
+  }
+
+  /* Show menu ONLY when open */
+  .nav-links.open {
+    display: flex;
+    padding: 25px 0;
+  }
+
+  .nav-links li {
+    font-size: 18px;
+  }
+
+  /* Book link mobile style */
+  .book a {
+    color: #030303;
+    font-size: 18px;
+  }
+}
+/*search bar */
+.nav-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left:10px;
+}
+
+.nav-search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.nav-search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(78, 73, 73);
+  font-size: 16px;
+}

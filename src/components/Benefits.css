@@ -1,0 +1,213 @@
+/* =========================
+   ROOT CONTAINER
+========================= */
+.scs-root {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(to right, #373a08, #e0d205);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   CARD AREA
+========================= */
+.scs-card-area {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 3 / 2;
+}
+
+.scs-card-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scs-card {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.scs-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.scs-card--back img {
+  filter: grayscale(100%) contrast(0.8);
+  opacity: 0.85;
+}
+
+/* =========================
+   DETAILS AREA
+========================= */
+.scs-details-area {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.title {
+  color: #d1d8d4;
+  font-size: 40px;
+}
+
+/* =========================
+   CONTROLS
+========================= */
+.scs-controls {
+  display: flex;
+  gap: 25px;
+}
+
+.scs-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #f6e4e7;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.scs-btn:hover {
+  background: #e9ccd1;
+}
+
+/* =========================
+   TEXT
+========================= */
+.scs-name h2 {
+  font-size: 28px;
+  color: #1e5533;
+  margin: 0;
+  font-weight: 700;
+}
+
+.scs-sub {
+  font-size: 14px;
+  color: #1b1a1a;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.scs-underline {
+  width: 80px;
+  height: 4px;
+  background: #1d4e33;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.scs-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.scs-lines div {
+  width: 120px;
+  height: 3px;
+  background: #dcdcdc;
+  border-radius: 10px;
+}
+
+/* =========================
+   HEADING
+========================= */
+.heading {
+  text-align: center;
+  color: #696e1c;
+  font-family: "Garamond", cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+  .scs-root {
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .scs-root {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .scs-details-area {
+    align-items: center;
+  }
+
+  .scs-controls {
+    justify-content: center;
+  }
+
+  .scs-card-area {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+  .scs-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .scs-name h2 {
+    font-size: 22px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}

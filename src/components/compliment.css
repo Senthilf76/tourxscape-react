@@ -1,0 +1,142 @@
+.services-section {
+  text-align: center;
+  padding: 90px 20px;
+  background: url("/public/assets/fi.avif");
+  background-size: cover;        /* fills section */
+  background-position: center;   /* center image */
+    
+}
+
+.services-subtitle {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #061309;
+  margin-bottom: 8px;
+}
+
+.services-title {
+  font-size: 2.3rem;
+  color: #135a1c;
+  margin-bottom: 40px;
+  font-family: "Garamond",cursive;
+}
+
+/* === Slider Container === */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-track {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* === Card === */
+.service-card {
+  background: rgba(7, 57, 70, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(5, 92, 104, 0.5);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #135a1c;
+  margin-bottom: 20px;
+}
+
+/* === Slide animation === */
+.fade-slide {
+  animation: fadeSlide 0.8s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===========================
+   RESPONSIVE BREAKPOINTS
+=========================== */
+
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .slider-track {
+    gap: 40px;
+  }
+
+  .service-card {
+    width: 260px;
+    padding: 25px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+}
+
+/* Large Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .slider-track {
+    gap: 25px;
+  }
+
+  .service-card {
+    width: 230px;
+    padding: 22px;
+  }
+
+  .icon {
+    font-size: 2.2rem;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 60px 10px;
+  }
+
+  .slider-track {
+    gap: 10px;
+  }
+
+  .service-card {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .services-title {
+    font-size: 1.6rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.4rem;
+  }
+}

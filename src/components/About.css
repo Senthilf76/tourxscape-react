@@ -1,0 +1,152 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 120px;
+  background: #f9f9f9;
+}
+
+/* LEFT – IMAGE */
+.about-pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-pic img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* RIGHT – CONTENT */
+.about-container {
+  flex: 1.3;
+}
+
+/* TITLE */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #274f8f;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* INTRO */
+.about-brief {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 800px;
+  margin: 30px auto;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* PARAGRAPHS */
+.about-content {
+  margin-top: 40px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* VALUES */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.value-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h4 {
+  font-size: 1.3rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* 📱 TABLET & MOBILE */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .about-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .about-pic {
+    width: 100%;
+  }
+
+  .about-pic img {
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-brief {
+    font-size: 1rem;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .value-card {
+    padding: 22px;
+  }
+}

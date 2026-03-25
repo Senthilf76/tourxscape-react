@@ -1,0 +1,98 @@
+/* Section Styling */
+.packages-section {
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.packages-subtitle {
+  color: #0a7902;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  font-family: "Garamond",cursive;
+}
+
+.packages-title {
+  font-size: 2.5rem;
+  color: rgb(15, 128, 128);
+  margin-bottom: 30px;
+  font-family: "Garamond",cursive;
+}
+
+/* Carousel Layout */
+.carousel {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow Buttons */
+.arrow {
+  background: rgb(196, 193, 193);
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.arrow.left {
+  margin-right: 10px;
+  color: #0d7c06;
+}
+
+.arrow.right {
+  margin-left: 10px;
+  color: #0d7c06;
+}
+
+/* Slider Container */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Sliding Track */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Individual Card */
+.package-card {
+  flex: 0 0 20%; /* 5 cards visible */
+  margin: 10px;
+  background: #faf8f8;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.package-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.package-card p {
+  color: #0d7c06;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,116 @@
+.mus-section{
+  font-family:"Poppins",sans-serif;
+  background:#f4fff7;
+}
+
+/* HERO */
+.mus-hero{
+  position:relative;
+  height:420px;
+  overflow:hidden;
+}
+.mus-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-overlay{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);
+  color:white;
+  padding:40px;
+}
+
+/* LAYOUT */
+.mus-layout{
+  display:flex;
+  gap:30px;
+  padding:40px;
+}
+
+.mus-main{
+  flex:3;
+}
+
+.booking-sidebar{
+  flex:1;
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  height:fit-content;
+  position:stick;
+  top:100px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CARD */
+.premium-card{
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:25px;
+}
+
+.mus-highlights span{
+  background:#e8fff0;
+  padding:8px 14px;
+  border-radius:30px;
+  margin-right:10px;
+  display:inline-block;
+  margin-top:8px;
+}
+
+/* TIMELINE */
+.timeline{
+  border-left:3px solid #2ecc71;
+  padding-left:20px;
+}
+.timeline-item{
+  margin-bottom:20px;
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+}
+
+/* HOTEL */
+.hotel-card{
+  background:white;
+  padding:20px;
+  border-radius:18px;
+  margin-top:20px;
+}
+
+.hotel-images{
+  display:flex;
+  gap:12px;
+  margin-bottom:15px;
+}
+.hotel-images img{
+  width:33%;
+  border-radius:12px;
+  height:120px;
+  object-fit:cover;
+}
+
+/* BUTTONS */
+.btn-primary{
+  background:linear-gradient(135deg,#2ecc71,#27ae60);
+  color:white;
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.btn-glass{
+  margin-top:15px;
+  background:rgba(255,255,255,0.5);
+  border:1px solid #2ecc71;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+}
