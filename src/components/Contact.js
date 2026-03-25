@@ -67,7 +67,7 @@ const Contact = () => {
             <textarea placeholder="Enter your message" rows="5" required />
 
             <ReCAPTCHA
-              sitekey="6Le2CT8sAAAAAD2iWtOIQB4H_5EhVmwiuvT4NKVW"
+              sitekey="6Lcw95csAAAAAIAaMW8mIb0ykY3hlDkOMQIzd917"
               onChange={(value) => setCaptchaValue(value)}
             />
 
